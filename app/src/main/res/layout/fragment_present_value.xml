@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.ffx.fcalculator.fragments.PresentValueFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/row_margin_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/future_value"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/text_vertical_margin" />
+            <EditText style="@style/BCCurrencyEditText"
+                android:id="@+id/pres_val_future_value"
+                android:background="@drawable/bg_edittext_currency"
+                android:layout_width="match_parent"
+                android:hint="0"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/years"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/text_vertical_margin" />
+
+            <EditText style="@style/BCYearsEditText"
+                android:id="@+id/pres_val_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/discount_rate"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/text_vertical_margin" />
+            <EditText style="@style/BCPercentEditText"
+                android:id="@+id/pres_val_discount_rate"
+                android:background="@drawable/bg_edittext_currency"
+                android:layout_width="match_parent"
+                android:hint="0"
+                android:layout_height="wrap_content"/>
+            <Button style="@style/BCButton"
+                android:id="@+id/pres_val_calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

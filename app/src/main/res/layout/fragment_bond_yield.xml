@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.ffx.fcalculator.fragments.BondYieldFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/row_margin_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/current_price"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCCurrencyEditText"
+                android:id="@+id/bond_yield_current_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/per_value"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCCurrencyEditText"
+                android:id="@+id/bond_yield_per_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/coupon_rate"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCPercentEditText"
+                android:id="@+id/bond_yield_coupon_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/years_to_maturity"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCYearsEditText"
+                android:id="@+id/bond_yield_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"/>
+
+            <Button style="@style/BCButton"
+                android:id="@+id/bond_yield_calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

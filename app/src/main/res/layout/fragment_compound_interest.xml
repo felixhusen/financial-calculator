@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.ffx.fcalculator.fragments.CompoundInterestFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/row_margin_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/current_principal"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCCurrencyEditText"
+                android:id="@+id/comp_current_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/annual_addition"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCCurrencyEditText"
+                android:id="@+id/comp_annual_addition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/years_to_grow"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCYearsEditText"
+                android:id="@+id/comp_years_to_grow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/interest_rate"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCPercentEditText"
+                android:id="@+id/comp_interest_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/interest_time"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCTimesEditText"
+                android:id="@+id/comp_interest_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1"
+                android:text="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/make_addition_at"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <com.savvyapps.togglebuttonlayout.ToggleButtonLayout
+                android:id="@+id/cp_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                app:customLayout="@layout/toggle_pc"
+                app:toggleMode="even"
+                app:allowDeselection="false"
+                app:menu="@menu/cp_toggle"
+                app:selectedColor="?attr/colorPrimary" />
+
+            <Button style="@style/BCButton"
+                android:id="@+id/comp_calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

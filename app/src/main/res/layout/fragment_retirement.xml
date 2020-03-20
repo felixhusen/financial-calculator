@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.ffx.fcalculator.fragments.RetirementFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/row_margin_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_vertical_margin"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/current_principal"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text3"
+                android:textStyle="bold" />
+
+            <EditText style="@style/BCCurrencyEditText"
+                android:id="@+id/retirement_current_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/pre_retirement"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text2"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/annual_addition"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text3"
+                    android:textStyle="bold" />
+
+                <EditText style="@style/BCCurrencyEditText"
+                    android:id="@+id/retirement_annual_addition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/years_to_grow"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text3"
+                    android:textStyle="bold" />
+
+                <EditText style="@style/BCYearsEditText"
+                    android:id="@+id/retirement_years_to_grow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/pre_growth_rate"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text3"
+                    android:textStyle="bold" />
+
+                <EditText style="@style/BCPercentEditText"
+                    android:id="@+id/retirement_pre_growth_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/in_retirement"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text2"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/years_pay_out"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text3"
+                    android:textStyle="bold" />
+
+                <EditText style="@style/BCYearsEditText"
+                    android:id="@+id/retirement_years_pay_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_vertical_margin"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/in_growth_rate"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text3"
+                    android:textStyle="bold" />
+
+                <EditText style="@style/BCPercentEditText"
+                    android:id="@+id/retirement_in_growth_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="0" />
+
+            </LinearLayout>
+            <Button style="@style/BCButton"
+                android:id="@+id/retirement_calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

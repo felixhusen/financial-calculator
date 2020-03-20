@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/edit_text_att_width"
+        android:height="@dimen/edit_text_height">
+        <shape>
+            <solid android:color="@color/bg_edit_text_left"/>
+            <corners android:bottomRightRadius="5dp"
+                android:topRightRadius="5dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/ic_years"/>
+</layer-list>

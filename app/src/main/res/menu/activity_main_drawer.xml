@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Saved Calculation Group -->
+    <item android:title="@string/navg_saved_calculation">
+        <menu>
+            <item
+                android:id="@+id/nav_saved_calculation"
+                android:icon="@drawable/ic_menu_saved_calculation"
+                android:title="@string/nav_saved_calculation" />
+        </menu>
+    </item>
+
+    <item android:title="@string/navg_calculator">
+        <menu>
+            <item
+                android:id="@+id/nav_comp_interest"
+                android:icon="@drawable/ic_menu_compound_interest"
+                android:title="@string/nav_comp_interest" />
+            <item
+                android:id="@+id/nav_present_value"
+                android:icon="@drawable/ic_menu_present_value"
+                android:title="@string/nav_pres_value" />
+            <item
+                android:id="@+id/nav_return_rate"
+                android:icon="@drawable/ic_menu_return_rate"
+                android:title="@string/nav_return_rate" />
+            <item
+                android:id="@+id/nav_annuity"
+                android:icon="@drawable/ic_menu_annuity"
+                android:title="@string/nav_annuity" />
+            <item
+                android:id="@+id/nav_present_value_annuity"
+                android:icon="@drawable/ic_menu_present_value_annuity"
+                android:title="@string/nav_pres_value_of_annuity" />
+            <item
+                android:id="@+id/nav_bond_yield"
+                android:icon="@drawable/ic_menu_bond_yield"
+                android:title="@string/nav_bond_yield" />
+            <item
+                android:id="@+id/nav_mortgage"
+                android:icon="@drawable/ic_menu_mortgage"
+                android:title="@string/nav_mortgage" />
+            <item
+                android:id="@+id/nav_retirement"
+                android:icon="@drawable/ic_menu_retirement"
+                android:title="@string/nav_retirement" />
+        </menu>
+    </item>
+
+    <!-- More Group -->
+    <item android:title="@string/navg_more">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_about"
+                android:title="@string/nav_about" />
+        </menu>
+    </item>
+
+</menu>
