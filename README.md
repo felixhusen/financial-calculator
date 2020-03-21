@@ -6,6 +6,6 @@ Download: https://play.google.com/store/apps/details?id=com.ffx.fcalculator&hl=e
 
 # Features
 
-• Performs compound interest, present value, return rate, annuity, present value of annuity, bond yield, mortgage, and retirement calculation.
-• Saves and names calculation to the device
-• Beautiful user interface with the latest design of android's material design
+* Performs compound interest, present value, return rate, annuity, present value of annuity, bond yield, mortgage, and retirement calculation.
+* Saves and names calculation to the device
+* Beautiful user interface with the latest design of android's material design
